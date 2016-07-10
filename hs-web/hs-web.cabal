@@ -1,0 +1,5 @@
+Name: hs-web
+Version: 1.0
+Exposed-Modules: Web.Html
+build-depends: base, haskell98, hs-misc
+ghc-options: -O2 -Wall

@@ -1,0 +1,113 @@
+
+\section{Overview}
+
+    This section contains a short overview of our approach to plant
+    simulation, focusing on high-level motives behind the design.
+
+
+\subsection{Realism}
+
+
+    To catch the immense complexity of real plants i an actually
+    usable system would be impossible, since that would require
+    simulation at least on the level of individual cells. To reach
+    manageable complexity we work instead on the level of major parts
+    of a plant, such as a branch or a leaf. While not completely
+    realistic from a biologic viewpoint, our simulations are capable
+    of producing visually convincing plant models, both static and
+    animated.
+
+
+    The challenge is to find the aspects of nature which are relevant
+    for the result of the models, to find a level on which processing
+    time is acceptable and yet the appearance implies an underlying
+    natural regulating system.
+    
+    The relevant forces of nature have been separated and
+    collected in a set which is deployed on the tree during each
+    step.
+
+
+\subsection{Simplifications}
+
+    In addition to working on a rather high structure level, we make a
+    number of other simplifications regarding the nature of biological
+    plants. 
+
+    Physical limitations are one aspect which is very expensive to
+    account for exactly (since that would require detailed
+    calculations of geometric appearance in every step of the
+    simulation), but also of surprisingly little importance to
+    realism, hence we allow ourselves to break physical restrictions
+    either only during parts of simulation, or completely.
+
+
+
+
+
+
+
+
+% % Nedan är inte helt implementerat än, men jag har tänkt göra det.. - peter
+% 
+% \subsection{Environmental factors}
+% 
+% 
+%     To make the biological complexity manageable the model is kept very
+%     simple, while allowing for a few interesting interactions with the
+%     environment.
+%     The environment of the simulation is approximated by four
+%     factors, temperature, sunlight, substance levels and physical
+%     structure of the surroundings.
+% 
+%     Some or all of the environmental factors may vary over time. 
+%     Either because of external changes such as different seasons or
+%     internal changes caused by the actual simulation (shading, water
+%     consumption, collision between large branches, ...)
+%      
+% 
+% \subsubsection*{Temperature}
+% 
+%     An average temperature for the global world is maintained, local
+%     changes are not taken into account.
+% 
+% 
+% \subsubsection*{Sunlight}
+% 
+%     Each point in the world can be queried for the direction towards
+%     the sun and the intensity of the light. Since these properties
+%     changes wildly even for shorter periods, they may be approximated
+%     either by a simple average or a sampling of real values which 
+%     are adapted for the simulation.
+% 
+% \subsubsection*{Substance levels}
+% 
+%     (currently only an generalized``power'') \\
+%     Each point in the world, air as well as soil, can be queried for the
+%     concentration of power available for consumption by the plant.
+%     This generic ``power'' can of course be split up in a number of
+%     resources such as water and minerals to allow for more detailed
+%     simulations, if need arises.
+% 
+% 
+% \subsubsection*{Physical structure}
+% 
+%     Each point in the world can be queried whether it is free (in
+%     the air) or contained by some structure (soil, rocks,
+%     plants...). To guide the simulation a vector pointing towards
+%     the closest surface to a given point is also available. 
+% 
+% 
+% \subsection{Feedback and limitations}
+% 
+%     As mentioned above, an extremely detailed model of the world is
+%     not realistic in a realtime simulation, especially modifications
+%     of the environment caused by the simulated plants is heavily
+%     simplified. Water levels and light is accounted for in big blocks,
+%     shading is very limited and coarse, small structures are ignored
+%     for collision detection, and so on...
+% 
+%     However, even rather simple models give rise to quite natural and
+%     interesting behaviour of the simulated plants.
+% 
+% 

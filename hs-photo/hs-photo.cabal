@@ -1,0 +1,10 @@
+Name: hs-photo
+Version: 1.0
+build-depends: base, haskell98, OpenGL, GLUT
+ghc-options: -Wall
+Exposed-Modules: Photo
+
+
+Executable: PhotoSieve
+Main-is: PhotoSieve.hs
+

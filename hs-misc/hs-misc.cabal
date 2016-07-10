@@ -1,0 +1,6 @@
+Name: hs-misc
+Version: 1.0
+Exposed-Modules: DeepSeq, Logger, Misc, Parse, FixedPoint, ByteOrder
+build-depends: base, haskell98, parsec
+Extensions: ImplicitParams
+ghc-options: -fglasgow-exts -O2 -Wall

@@ -1,0 +1,9 @@
+Name: hs-milter
+Version: 1.0
+Exposed-Modules: Net.Milter,
+                 Net.MilterProtocol,
+                 Net.MilterProtocolIO,
+                 Net.MilterTalk,
+                 Net.MilterChannel
+build-depends: base, haskell98, hs-misc, hs-net, hs-system, mtl, network, unix
+ghc-options: -O2 -Wall

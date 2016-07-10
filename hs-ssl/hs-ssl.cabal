@@ -1,0 +1,5 @@
+Name: hs-ssl
+Version: 1.0
+Exposed-Modules: Net.SSL
+build-depends: base, haskell98
+ghc-options: -O2 -Wall

@@ -1,0 +1,121 @@
+
+
+
+
+
+\subsection{Overview}
+
+
+    This approach is essentially just an L-system with a
+    rather big state as parameters and a dynamic number of
+    structure parts.  However, focus is moved from the
+    explicit and complete state changes towards incremental
+    changes and especially their triggers and high-level
+    effects. It is possible to describe events abstractly
+    and capture repeatedly occurring patterns in higher
+    order functions.
+
+    In addition to the actual programs, a simulation module
+    and a visualization module completes the design. These
+    two are described in detail in the implementation
+    section (\ref{monadic_impl}). The division in two,
+    rather independent, passes, simulation and
+    visualization, provides two interesting features:
+
+    When simulating a new world, to a given state without
+    caring about visualization (until finished), the
+    first pass may be run much more often than the
+    second, trading accuracy for speed (the visualization
+    is be used to calculate feedback originating from
+    spacial orientation, which is not directly known in the
+    structure tree, more on this in section
+    \ref{monadic_feedback}).
+
+    When visualizing a "constant" world (time changing
+    slowly, or not at all), the second pass can be used to
+    apply small mutations to the model, to give the
+    impression of windy circumstances (rattling leaves,
+    bending branches) and also to add detail and
+    irregularities. 
+
+    The second pass may also be used to interpolate between
+    discrete states, providing smaller steps, and animation,
+    cheaply.
+
+
+
+\subsection{Basics}
+
+    A plant consists of a number of structure parts
+    organized in an tree (or a DAG, given the shared
+    representation optimization described below). Each node
+    have a state and a program associated with it. 
+
+    The state can be seen as the parameters of a parametric
+    L-System (see \ref{param_l_system}) and is essentially
+    divided in two parts, one for parameters which are
+    needed for the simulation and visualization and one for
+    the private, internal state of each node.
+
+    The type of the internal state can be different for
+    different node types and decides which operations can be
+    used in the program. A number of standard sets of
+    operations are provided which capture most of the common
+    needs for a plant, such as growth, mass (gravity) and
+    energy distribution.
+
+
+
+
+
+\subsection{Overview}
+
+
+
+\subsection{Simulation}
+
+
+
+\subsection{Visualization}
+
+
+\subsection{Operations}
+\subsubsection{Growth}
+
+
+
+\subsubsection{Resources}
+
+\subsubsection{Message propagation}
+
+
+\subsubsection{Local state}
+
+
+\subsection{Forests}
+
+
+\subsection{Conversations from L-systems}
+
+\newpage
+\section{Monadic Implementation}
+
+    \label{dsel_impl}
+    \label{monadic_impl}
+
+    \todo{impl. strategy}
+
+\subsection{Overview}
+
+    \todo{describe the various parts}
+
+\subsection{Efficiency considerations}
+
+
+\subsection{Programs}
+
+\subsection{Simulation}
+
+
+\subsection{Combining Monadic State}
+

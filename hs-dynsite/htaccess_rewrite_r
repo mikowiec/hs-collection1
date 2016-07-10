@@ -1,0 +1,8 @@
+
+
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} ^(.*)/r($|/.*$)
+RewriteRule r($|/.*$) %1/redirect.cgi%2
+

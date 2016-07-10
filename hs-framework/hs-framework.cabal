@@ -1,0 +1,5 @@
+Name: hs-framework
+Version: 1.0
+Exposed-Modules: App.Config, App.Signals, App.IDGen
+build-depends: base, haskell98, hs-misc
+ghc-options: -Wall -O2 -fglasgow-exts

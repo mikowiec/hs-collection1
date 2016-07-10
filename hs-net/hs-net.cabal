@@ -1,0 +1,5 @@
+Name: hs-net
+Version: 1.0
+Exposed-Modules: Net.Talk
+build-depends: base, haskell98, network, hs-misc
+ghc-options: -Wall -O2

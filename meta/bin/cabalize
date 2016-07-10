@@ -1,0 +1,28 @@
+#!/bin/sh
+
+
+if [ -z $1 ]; then
+  wd=`pwd`
+  pkg=`basename $wd`
+else
+  pkg=$1
+fi
+
+modules=`find -name \*hs   -not -path \*/_darcs/\*  | grep -v Setup\. | cut -b3- | sed -e 's!/!.!g' | sed -e 's/\.l\?hs//' | tr \\\n , | sed -e 's/,$//'`
+
+cat >Setup.hs <<SETUP
+#!/usr/bin/env runhaskell
+import Distribution.Simple
+main = defaultMain
+SETUP
+
+chmod 755 Setup.hs
+
+cat >$pkg.cabal <<CABAL
+Name: $pkg
+Version: 1.0
+Exposed-Modules: $modules
+build-depends: base, haskell98
+ghc-options: -O2 -Wall
+CABAL
+

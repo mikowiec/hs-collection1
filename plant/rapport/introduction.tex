@@ -1,0 +1,70 @@
+
+\section{Introduction}
+
+
+    Computer games today drives much of the development in the
+    area of computer graphics, both software and especially hardware.
+    Producing convincing scenery which mimics the real world as close
+    as possible, while still allowing real-time action, is the holy
+    grail of the industry.
+
+    Hardware have until recently been the fundamental bottleneck
+    behind the visualisation of complex dynamic scenes, thus also
+    hindering the development of detailed simulation of events in the
+    world. However, the last couple of years the capabilities have
+    increased enormously allowing for usage of dynamic and realistic
+    visualisations of scenery. Most of these capabilities have been
+    used to enhance the main characters of the games, leaving the
+    background as dead and boring as before. Much because many games
+    take place strictly indoors, or outdoors with limited movement
+    possibilities, where a simple background-scene may be sufficient.
+
+
+\subsection{Plant simulation and visualisation}
+
+    As outdoor scenes becomes increasingly common in gaming scenery,
+    so does the importance of representing a visually satisfying
+    plant-life. Although some steps have been taken from simple
+    texture representations, in order to create a more
+    three-dimensional look, plant-life is still often unmixed,
+    containing multiple clones of the same model. An outdoor
+    environment is seldomly, and then merely scarcely affected by the
+    forces and constraints of nature and time, which renders the
+    experience only half-living. And the passing of time is, without
+    any exception that we are aware of, never taken into account.
+    Clearly, it is desirable being able to observe the change of
+    seasons and withering of time and limitation of resources.
+
+    Thus we wish to create means to design the plant-life for
+    environments supporting such properties. The resulting plants will
+    be physically individual and evolve from seed to fully grown trees
+    or plants over time. They should respond to changes in available
+    resources and strive for their energy source (e.g. the Sun).
+    Furthermore, complete environments (e.g.  woods) can be grown in
+    realtime during gameplay.
+
+
+\subsection{Our goal}
+
+    The language we aim to develop should be capable of making
+    specifications with enough detail to make convincing models of a
+    wide variety of real and imagined plants, both as static
+    visualisations and dynamic simulations.  Attributes of the plant,
+    both visual appearance and behaviour over time should follow the
+    specifications as closely as is desirable. 
+
+    To execute these specifications an interpreter is developed, which
+    evolves the plants and visualizes the result. The interpreter is
+    also capable of exporting the model to external programs (such as
+    ray-tracers), or being used as part of one via a plugin-interface.
+    The latter enables 3d-modelers such as Maya or SoftImage to use
+    our system to evolve a plant which is then freezed and can be
+    finetuned by the modeling-tool.
+
+\subsection{Limitations}
+
+    \label{highlevel_limitations}    
+    The focus are set on the graphic result of the simulations.
+    That is, we are not attempting to resemble nature in any
+    other ways than those affecting the visual appearance of the
+    objects. 

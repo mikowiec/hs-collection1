@@ -1,0 +1,8 @@
+Name: hs-profile
+Version: 1.0
+Build-Depends: base, haskell98
+Other-Modules: Posix.HighPrecisionTime
+-- Other-Modules: Win32.HighPrecisionTime
+Exposed-Modules: Profile
+Extensions: CPP, ForeignFunctionInterface
+ghc-options: -Wall -O2

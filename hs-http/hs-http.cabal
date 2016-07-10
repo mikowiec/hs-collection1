@@ -1,0 +1,5 @@
+Name: hs-http
+Version: 1.0
+Exposed-Modules: Net.Http
+build-depends: base, haskell98, network, regex-compat, HUnit
+ghc-options: -O2 -Wall

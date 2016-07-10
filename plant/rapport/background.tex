@@ -1,0 +1,133 @@
+
+\section{Background}
+
+    A fundamental aspect of nature is that structures grow by applying built-in
+    rules and adapting to circumstances rather than being constructed directly
+    in a final state. It is very hard to get around this property, at least if
+    we want to produce a large variety of organisms from the same base where
+    the final configurations are different and adapted enough to appear
+    convincing in their environment.
+
+
+
+\subsection{Existing approaches}
+
+    A number of system and approaches exists for modeling and evolving
+    plants and other biological structures, most of them are based on
+    Lindenmayer systems, described below. 
+
+
+
+\subsection{Fractal properties}
+    A common question about this project has been that of whether fractals are used.
+    In order to answer that, an attempt is made to explain
+    very briefly what a fractal actually is.\\
+    Mathematically, the concept of a fractal dimension of a
+    set is based upon the Housdorff-Besicovitch dimension,
+    which is defined using the Hausdorff measure. It involves
+    calculating the minimum number of a certain kind of sets
+    required to cover the set of interest. There are
+    heuristic ways to calculate this, amongst them the
+    self-similarity dimension that makes use of the scaling
+    property of a measure.\\
+    A simpler and more popular way to define fractal is to
+    say that it is "a geometric pattern repeated on every
+    scale and so cannot be represented using classical
+    geometry."\\
+    Although somewhat dim, we could say that our trees hold
+    some fractal properties, since they would appear when
+    looked upon from a reasonable distance, to possess such
+    repetetive patterns. These could be further extended by
+    setting the the shapes of the branches to an intricate
+    self-similar function.
+ 
+
+
+
+
+\subsection{Lindenmayer System Introduction}
+
+\label{lindenmayer}
+
+    Aristid Lindenmayer proposed L-systems as a mathematical
+    formalization of biological development in 1968. They have since
+    been successfully used in computer graphics to generate realistic
+    models of plants. 
+
+    L-systems build on a very simple idea, successive rewriting of a
+    string of symbols where the rules are applied in
+    parallel\footnote{A similar system is Chomsky grammars, but the
+    rules in these are applied sequentially, which does not reflect
+    the parallel workings of nature as well as L-Systems.}.
+
+    An L-system is described by an alphabet of symbols, a starting
+    symbol and a number of rules. Originating from the starting symbol
+    a string is built by applying matching rules iteratively.
+
+    Consider the alphabet ${ab}$, starting symbol $a$ and rewrite
+    rules ${a\rightarrow ab, b\rightarrow a}$. This successively produces the strings: 
+    $a$, $ab$, $aba$, $abaab$, $abaababa$, \ldots 
+
+    Now, of what use is strings of letters to model nature?
+    The trick is to interpret the string as a geometrical description,
+    one common way, but by no means the only one, is to use turtle graphics
+    where symbols are interpreted either as lines to be
+    drawn or commands to change orientation, simplified.
+
+\begin{figure}[h]
+\centering
+\caption{Simple L-system }
+\label{lsys-example}
+\end{figure}
+    
+    Example \ref{lsys-example} is a D0L system, deterministic, context free
+    (taking 0 neighbours in account), L-system. In context dependent
+    systems (D$N$L) a rule may take a number of neighbouring symbols
+    into account when deciding if it matches or not, however only a
+    single symbol is rewritten.
+
+
+\subsubsection{Parametric L-systems}
+
+\label{param_l_system}
+
+    In parametric L-Systems a number of parameters and
+    conditions on these are also included in the rules, allowing for
+    simpler descriptions of what would otherwise be quite
+    incomprehensible (parameters can be simulated by extending the
+    alphabet).
+
+\begin{figure}[h]
+\centering
+\begin{tabular}{cc}
+\multicolumn{2}{c}{
+$ \begin{array}{lll}
+\omega : & A(100,\omega_0) \\
+p_1    : & A(s,w) : s \geq \mathit{min} \rightarrow & !(w)F(s) \\
+ & & [+(\alpha_1)/(\varphi_1)A(s \cdot r_1, w \cdot q^e)] \\
+ & & [+(\alpha_2)/(\varphi_2)A(s \cdot r_2, w \cdot (1-q)^e)]
+\end{array} $ } \\
+\\
+\includegraphics[height=1in]{images/lsystem1} &
+\includegraphics[height=1in]{images/lsystem2} \\
+\end{tabular}
+\caption{Parametric L-system (using notation from
+\cite{lsys_theory_vis}) and possible visualizations, for two sets of
+parameters}
+\label{param-lsys-example}
+\end{figure}
+
+\subsubsection{Further extensions}
+
+    Originating from this very simple idea, the L-systems have been
+    extended and improved to support several interesting features such
+    as signaling and bug-attacks. However, they tend to get
+    complicated to grasp as they grow in complexity. One idea early on
+    was simply to write a shell around this framework, to make it
+    easier and more intuitive to use. It was however concluded that
+    this approach might have caused unnecessary limitations. Instead
+    it was agreed to begin at a higher level and perhaps later export
+    to L-systems syntax.
+
+
+

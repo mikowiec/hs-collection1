@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+setup=Setup.hs
+[ -f $setup ] || setup=Setup.lhs
+
+
+runhaskell $setup configure --prefix=$HOME --user
+runhaskell $setup build
+runhaskell $setup install --user
+

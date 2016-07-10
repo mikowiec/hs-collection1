@@ -1,1 +1,1 @@
-# hs-collection1
+# haskell collection

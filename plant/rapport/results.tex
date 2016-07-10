@@ -1,0 +1,49 @@
+
+\section{Comparison of methodologies}
+
+
+\subsection{Global analysis}
+
+
+    The  parameterized approach makes use of its global view of the
+    tree for a number of reasons. The ability to maintain a strict
+    shape and to apply restriction of growth relies on such
+    information. Further more, it is necessary to access such
+    information when emulating forces of nature. For instance the sun
+    emulation is dependent on information of the neighbouring
+    branch-environment.
+
+    While possible to some extent, global analysis is generally
+    avoided and discouraged with the monadic approach due to the
+    complexity and dependencies it causes. Thus some designs and
+    behaviours are hard to model, such as advanced resource
+    distributions or forcing a certain shape on a plant in the
+    presence of resource limitations.
+
+
+\subsection{Extensibility}
+
+    When attempting to model a plant that is out-of-structure with the
+    parametrized system there is need to make changes in some of the
+    underlying layer. In the most probable cases it will be enough to
+    extend the metalanguage, but severe differences need a change in
+    the simulation module. The monadic approach uses a much simpler
+    and less hardcoded simulationfunction with most of the logic in
+    the actual plant descriptions, allowing extensions to be coded
+    completely by the user. However, the relatively primitive language
+    may limit the complexity of feasible additions, especially if they
+    involve global analysis.
+
+\newpage
+\section{Results}
+
+    We successfully simulate a large number of trees within reasonable
+    time. They can be simulated in real-time, should the structure not
+    be complex, or quasi-realtime when necessary. Further more, it is
+    possible to export geometrical representations to be used with
+    raytracers for high-quality images.
+    
+
+
+
+

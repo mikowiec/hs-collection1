@@ -1,0 +1,57 @@
+Intro:
+
+    Visa lite fina bilder.
+        T: Arra bild
+    Beskriv vad vi tittar på.
+        T: Presentationstext, som ramar in vad vi siktar på.
+    Varför har vi gjort detta?
+        P & T: Motivation. Behov pga taskiga utomhusscener. 
+               Evolution i kvasi-realtid.
+    Målet med projektet
+        P: Att relativt enkelt kunna modelera växtlighet som sedan m a p omgivning 
+           representeras snyggt och enkelt i spel och icke-realtids-renderingar.
+
+Design:
+
+    Tänket över den övergripande arkitekturen.
+        P: Moduluppdelning etc.
+    De två angripssättens inkörstänk.
+        P & T: Motivation till tänken.
+    Fina bilder över De Två Vägarna.
+        P & T: Visar fina bilder.
+    Lite mer ingående snack om ovanstående.
+        P & T: Poängterar egenskaperna hos de olika vägarna och pekar på olika grund-
+               problematiker som uppkommer.
+    Jämföra de Två Vägarna beträffande restriktioner och usability.
+        T: För resp nackdelar emellan systemen.
+
+Resultat:
+
+    Vad kan vi (inte) åstadkomma?
+        P: Braigheter samt svårigheter, med typ stora system av oberoende träd.
+           minnesstrul. 
+    Användbarhet(?)
+        T: Praktiskt användbart för att skapa modeller i förväg (då nedtesellera
+           modellerna) samt i viss mån köra i realtid. 
+    Annat löst snack.
+        P & T: Intressanta saker som inte tagits upp i annan punkt.
+
+    Visa typ jättetrevlig animation.
+        P: Renderingsfarm
+        T: Skicka så fort som möjligt till farmen.
+
+Frågor på det?
+    
+    Helst inte.
+
+övriga punkter (inte redovisning)
+
+    P: Hughes
+    T: Meddela exjobbstitel till kanslifolket.
+
+Rapporten:
+
+    T: Exempel.
+    P: Exempel. Oändligt många.
+
+

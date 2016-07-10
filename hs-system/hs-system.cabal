@@ -1,0 +1,6 @@
+Name: hs-system
+Version: 1.0
+Exposed-Modules: Sys.Syslog, Sys.Process, Sys.Shell, Sys.Temp
+build-depends: base, haskell98, unix, hs-misc
+Extensions: ForeignFunctionInterface
+ghc-options: -Wall -O2

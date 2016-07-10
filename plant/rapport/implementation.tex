@@ -1,0 +1,84 @@
+
+
+
+\section{Implementation}
+
+    The implementation of the system ....
+
+
+\subsection{Tools}
+ 
+    The development environment is implemented using Haskell and ghc
+    together with a number of libraries. The core of the program uses
+    pure Haskell98 plus the ST-monad but for programmatic convenience
+    and interfaces to the external world a few extensions are used in
+    the layers around that (multi.para.type classes, ffi, implicit
+    para., existential types). 
+
+    The GUI is written with gtk+hs using HOpenGL for the
+    visualisations of the models. 
+
+    Povray is used for raytraced renderings.
+
+\subsection{Language choice}
+
+    Haskell was chosen for a number of reasons, mainly because it is
+    very suitable to embed domain-specific languages in, ``for the
+    usual reasons...'' 
+
+    \todo{explain the usual reasons..}
+
+\subsection{Overview}
+
+
+    The program is divided in two major parts, the simulation
+    engine(s) and the visualisation module. The simulation outputs an
+    abstract representation of the geometric structure which contains
+    the necessary information to render an image of the simulated
+    plant. The level of the geometric representation is chosen high
+    enough to allow for a number of different rendering techniques
+    while still making it possible to describe the structure in
+    sufficient detail.
+
+
+
+\subsection{The simulation engine}
+
+    - The interface to our simulation algorithm is described here.
+      introduction to the two approaches..
+
+
+\subsection{Visualisation}
+
+    - How we visualise plants.
+
+
+\subsection{Interactive Development}
+
+    - Dynamic compilation and loading of code
+
+\subsubsection{Dynamic code-loading in Haskell}
+
+
+Interactive editors of DSELs, plugins usage. 
+
+Implicit parameters and IO-monad. Yay!
+
+\subsubsection{DSELS}
+
+Much have already been said about advantages and disadvantages
+of embedding a domain specific language in an already existing host
+language\cite{dsels}, we have largely arrived at the same position
+with a few additions, one advantage not mentioned very often, at least
+not explicitly, is the ease of which functionality can be moved back
+and forth between the host implementation and the embedded part.
+This is of great help especially when the problem is a bit fuzzy, when
+we do not know exactly which functionally is needed in the embedded
+language. A pure domain solution which is found to be generally
+useful, or in need of optimization only possible in the core, can be
+directly considered to be part of the language, since the host and
+the embedded parts are the same.
+
+
+
+

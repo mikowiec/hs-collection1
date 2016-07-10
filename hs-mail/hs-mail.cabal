@@ -1,0 +1,5 @@
+Name: hs-mail
+Version: 1.0
+Exposed-Modules: Net.Sendmail,Net.Mail
+build-depends: base, haskell98, network, hs-misc, hs-net
+ghc-options: -O2 -Wall

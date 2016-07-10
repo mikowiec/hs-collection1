@@ -1,0 +1,102 @@
+
+\documentclass[a4paper,english,titlepage]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{babel}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{haskell}
+
+\newcommand{\todo}[1]{\noindent {\small {\bf todo}}  -- \textsl{#1}}
+\newcommand{\hsidnt}[1]{\hspace{5mm}\hsalign{#1}}
+\newcommand{\hsalg}[1]{\\ \hspace{5mm}\hsalign{#1}}
+\newcommand{\hsdoo}[1]{\hskwd{do}\hspace{2mm} \hsalign{#1}}
+\newcommand{\hsdooo}[1]{\hskwd{do}\\ \hspace{5mm}\hsalign{#1}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\fn}[2]{\lambda #1 \rightarrow #2}
+\newcommand{\uc}{\!\_\!}
+
+\title{DOrcS - Developing Organic (Non-Locomotive) Structures}
+
+\author{Truls Bengtsson \\
+Peter Strand}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+Outdoor scenes are increasingly common in computer games today, but
+are often very static without evolution or interaction with the
+environment. We believe one reason for this is the difficulty of
+modelling such scenes with current tools and have developed a system
+which conveniently can describe both development and visual
+appearance of plants on a high level. 
+
+Two different approaches to plant specifications are explored, both
+realized as embedded languages in Haskell, and we provide an application 
+which allows both interactive development of these programs and generation
+of high-quality visualizations of the resulting plants.
+
+
+\end{abstract}
+
+
+\tableofcontents
+
+
+% Introduction, goals and limitations
+\include{introduction}
+
+
+% Existing approaches
+\include{background}
+
+
+% Overview of our solution(s)
+\include{overview}
+
+% General details of our implementation
+\include{system}
+
+
+% Detailed description of the monadic simulation engine
+\include{monadic}
+
+
+% Detailed description of the database-bases simulation engine
+\include{database}
+
+
+% Analysis, results, usefulness, ...
+\include{results}
+
+
+\appendix
+
+\include{monadic_examples}
+
+\include{dbexamples}
+
+
+
+% \newpage
+\begin{thebibliography}{MMM}
+% Definiera källa med:  \bibitem{key} Författare. \textsl{Titel}. Förlag, år etc..
+% referera sedan med \cite{key}
+% exempel:
+\bibitem{prusin_animplant} Przemyslaw Prusinkiewicz, Mark Hammel, Eric Mjolsness. \textsl{Animation of Plant Development.} 1993
+\bibitem{povray} Povray, \textsl{Persistence of Vision Ray-Tracer}, \texttt{http://www.povray.org}
+\bibitem{alexis} Alexis Brandeker \textsl{The Fractal Structure of Interstellar Clouds} 1998
+\bibitem{lsys_theory_vis} Przemyslaw Prusinkiewicz, \textsl{L-Systems: From the theory to visual models of plants} 1996
+\bibitem{obs_sharing} Koen Claessen, David Sands, \textsl{Observable Sharing for Functional Circuit Description}
+\end{thebibliography}
+
+
+\end{document}
+
+
+
+

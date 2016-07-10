@@ -1,0 +1,8 @@
+#!/bin/sh
+
+m=$1
+shift 1
+
+short_name=`echo $m | tr -d [a-z] | tr [A-Z] [a-z]`
+
+ghc --make $m -o $m -main-is $m.${short_name}_main $@

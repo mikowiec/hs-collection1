@@ -1,0 +1,59 @@
+
+# darcs
+# darcs pkg/darcs http://abridgegame.org/repos/darcs
+# darcs pkg/darcs-unstable http://abridgegame.org/repos/darcs-unstable
+
+# http://cryp.to/#software
+darcs ext-hs-blockio http://cryp.to/blockio/
+darcs ext-hs-hsemail http://cryp.to/hsemail
+
+# http://www.cse.unsw.edu.au/~dons/hs-plugins/
+darcs ext-hs-plugins http://www.cse.unsw.edu.au/~dons/code/hs-plugins
+
+darcs ext-hs-cabal     http://cvs.haskell.org/darcs/cabal
+darcs ext-hs-lambdabot http://www.cse.unsw.edu.au/~dons/lambdabot
+darcs ext-hs-hackage   http://scannedinavian.org/repos/hackage
+darcs ext-hs-hsemail   http://cryp.to/hsemail
+darcs ext-hs-hsx       http://www.cs.chalmers.se/~d00nibro/haskell-src-exts
+
+# mirrors
+darcs ext-hs-HList     http://zarquon.se/repos/ext-hs-HList
+darcs ext-hs-OOHaskell http://zarquon.se/repos/ext-hs-OOHaskell
+darcs ext-hs-crypto    http://zarquon.se/repos/ext-hs-crypto
+darcs ext-hs-missingh  http://zarquon.se/repos/ext-hs-missingh
+
+
+
+darcs-sync hs-dynsite           http://zarquon.se/repos/hs-dynsite
+darcs-sync hs-mail              http://zarquon.se/repos/hs-mail
+darcs-sync hs-milter            http://zarquon.se/repos/hs-milter
+darcs-sync hs-mini-httpd        http://zarquon.se/repos/hs-mini-httpd
+darcs-sync hs-misc              http://zarquon.se/repos/hs-misc
+darcs-sync hs-net               http://zarquon.se/repos/hs-net
+darcs-sync hs-printf            http://zarquon.se/repos/hs-printf
+darcs-sync hs-profile           http://zarquon.se/repos/hs-profile
+darcs-sync hs-spamc             http://zarquon.se/repos/hs-spamc
+darcs-sync hs-ssl               http://zarquon.se/repos/hs-ssl
+darcs-sync hs-system            http://zarquon.se/repos/hs-system
+darcs-sync hs-web               http://zarquon.se/repos/hs-web
+darcs-sync hs-libmilter         http://zarquon.se:repos/hs-milter
+darcs-sync hs-plant             http://zarquon.se/repos/plant
+darcs-sync scratch              http://zarquon.se/repos/scratch
+
+darcs-sync elit-hs-UD           zarq@zarquon.se:repos-priv/elit-hs-UD
+darcs-sync elit-hs-ping         zarq@zarquon.se:repos-priv/elit-hs-ping
+darcs-sync elit-hs-webstat      zarq@zarquon.se:repos-priv/elit-hs-webstat
+darcs-sync elit-hs-host-overview zarq@zarquon.se:repos-priv/elit-hs-host-overview
+darcs-sync elit-hs-milter       zarq@zarquon.se:repos-priv/elit-hs-milter
+
+
+# Added by sync-pkg, Sun Nov 20 11:26:25 CET 2005
+darcs      ext-hs-blobs         http://www.cs.york.ac.uk/fp/darcs/Blobs
+darcs      ext-hs-fps           http://www.cse.unsw.edu.au/~dons/code/fps
+darcs      ext-hs-haxml         http://www.cs.york.ac.uk/fp/darcs/HaXml
+darcs      ext-hs-hsgnutls      http://www.cs.helsinki.fi/u/ekarttun/hsgnutls/hsgnutls
+
+
+# Added by sync-pkg, Sun Nov 27 18:00:00 CET 2005
+darcs      ext-hs-jhc           http://repetae.net/john/repos/jhc
+
